@@ -63,7 +63,12 @@ function onCarouselScroll() {
             </template>
           </p>
           <p v-else class="client-summary">{{ client.summary }}</p>
-          <p class="client-detail">{{ client.detail }}</p>
+          <p v-if="client.detailLines" class="client-detail">
+            <template v-for="(line, idx) in client.detailLines" :key="idx">
+              {{ line }}<br v-if="idx < client.detailLines.length - 1" />
+            </template>
+          </p>
+          <p v-else class="client-detail">{{ client.detail }}</p>
         </article>
       </div>
 

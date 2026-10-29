@@ -94,7 +94,7 @@ export const clients = [
     id: 'tllincoln',
     name: 'TL린칸 (TL-Lincoln)',
     nameEn: 'TL-Lincoln',
-    category: '글로벌 CMS 파트너',
+    category: '글로벌 1등 CMS',
     summary: '국내 연계 서비스 공식 파트너사 선정',
     summaryLines: ['국내 연계 서비스', '공식 파트너사 선정'],
     detail: '호텔 PMS 및 국내외 10대 메이저 OTA 실시간 연동 게이트웨이 구축·운영',
@@ -117,7 +117,11 @@ export const clients = [
     nameEn: 'Hanwha Hotels & Resorts',
     category: '대형 호텔·리조트',
     summary: '엔터프라이즈 예약·채널 연계',
-    detail: '대규모 호텔·리조트 객실 예약 및 대외 판매 채널 실시간 인터페이스 연동',
+    detail: '호텔·리조트 TL, Naver 예약, 재고요금 실시간 연동 및 그외 대외 인터페이스 연동 인터페이스 구축 및 운영',
+    detailLines: [
+      '호텔·리조트 TL, Naver 예약, 재고요금 실시간 연동 및',
+      '그외 대외 인터페이스 연동 인터페이스 구축 및 운영'
+    ],
     accent: 'purple',
     visible: true
   },
