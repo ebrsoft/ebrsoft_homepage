@@ -12,8 +12,8 @@ export const companyInfo = {
   heroHeadlineAccent: '소중한 예약 정보가 실시간으로 흐르도록 연결을 돕습니다',
   heroDescription:
     '복잡하게 흩어진 숙박·티켓·투어 데이터를 하나의 표준화된 웹 플랫폼으로 이어, 고객과 호텔 모두에게 가장 편안한 예약 경험을 만들어 줍니다.',
-  logoHorizontal: '/images/logo-horizontal.png',
-  logoVertical: '/images/logo-vertical.png',
+  logoHorizontal: `${import.meta.env.BASE_URL}images/logo-horizontal.png`,
+  logoVertical: `${import.meta.env.BASE_URL}images/logo-vertical.png`,
   contact: {
     email: 'admin@ebrsoft.co.kr',
     phone: '02-0000-0000',
