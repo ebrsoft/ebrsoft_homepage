@@ -117,7 +117,7 @@ export const clients = [
     nameEn: 'Hanwha Hotels & Resorts',
     category: '대형 호텔·리조트',
     summary: '엔터프라이즈 예약·채널 연계',
-    detail: '호텔·리조트 TL, Naver 예약, 재고요금 실시간 연동 및 대외 인터페이스 연동 인터페이스 구축 및 운영',
+    detail: '호텔·리조트 TL, Naver 예약, 재고요금 실시간 연동 및 대외 인터페이스 연동 구축 및 운영',
     accent: 'purple',
     visible: true
   },
