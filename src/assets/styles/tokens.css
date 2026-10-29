@@ -1,0 +1,52 @@
+:root {
+  /* Surfaces (Bright Clean Enterprise Mode) */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f8fafc;
+  --color-bg-subtle: #f1f5f9;
+  --color-bg-card: #ffffff;
+  --color-bg-dark: #0f172a;
+
+  /* Official Logo Brand Identity Colors */
+  --color-brand-magenta: #d90b8c;
+  --color-brand-magenta-dark: #b80a77;
+  --color-brand-purple: #7c2289;
+  --color-brand-navy: #2b4490;
+  --color-brand-navy-deep: #1e2e85;
+  --gradient-brand: linear-gradient(135deg, #d90b8c 0%, #7c2289 50%, #2b4490 100%);
+  --gradient-brand-soft: linear-gradient(135deg, rgba(217, 11, 140, 0.08) 0%, rgba(124, 34, 137, 0.08) 50%, rgba(43, 68, 144, 0.08) 100%);
+  --gradient-hero-bg: radial-gradient(circle at 80% 10%, rgba(217, 11, 140, 0.07), transparent 42%),
+                      radial-gradient(circle at 20% 85%, rgba(43, 68, 144, 0.07), transparent 45%),
+                      linear-gradient(180deg, #fdf4ff 0%, #ffffff 55%, #ffffff 100%);
+
+  /* Semantic Accents */
+  --color-accent-emerald: #10b981;
+  --color-accent-blue: #2563eb;
+  --color-accent-rose: #e11d48;
+
+  /* Typography Colors */
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+
+  /* Borders & Elevation Shadows */
+  --color-border: #e2e8f0;
+  --color-border-subtle: #f1f5f9;
+  --shadow-sm: 0 2px 8px -2px rgba(15, 23, 42, 0.05);
+  --shadow-card: 0 14px 32px -12px rgba(15, 23, 42, 0.08);
+  --shadow-card-hover: 0 22px 44px -14px rgba(43, 68, 144, 0.16);
+  --shadow-brand: 0 12px 28px -8px rgba(124, 34, 137, 0.35);
+
+  /* Typography Families */
+  --font-sans: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Layout & Spacing */
+  --container-max-width: 1120px;
+  --header-height: 76px;
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-full: 9999px;
+  --ease-out-expo: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
