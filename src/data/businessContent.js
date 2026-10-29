@@ -105,8 +105,8 @@ export const clients = [
     id: 'roominghub',
     name: '루밍허브 (RoomingHub)',
     nameEn: 'RoomingHub',
-    category: '숙박·채널 플랫폼',
-    summary: '글로벌 숙박 B2B·OTA 실시간 연동',
+    category: 'TL린칸 운영 파트너사',
+    summary: '호텔 PMS, 국내 OTA 실시간 연동',
     detail: '숙박 상품·재고·요금 데이터의 끊김 없는 실시간 채널 연동 및 운영 지원',
     accent: 'magenta',
     visible: true
