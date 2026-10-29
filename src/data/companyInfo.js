@@ -15,7 +15,9 @@ export const companyInfo = {
   logoHorizontal: `${import.meta.env.BASE_URL}images/logo-horizontal.png`,
   logoVertical: `${import.meta.env.BASE_URL}images/logo-vertical.png`,
   contact: {
-    email: 'admin@ebrsoft.co.kr',
+    // 스팸 수집 봇(Scraper)이 이메일 정규식이나 텍스트로 추출하지 못하도록 조각으로 분리 보관
+    emailUserParts: ['ad', 'min'],
+    emailDomainParts: ['ebrsoft', 'co', 'kr'],
     phone: '02-0000-0000',
     address: '서울특별시 (상세 주소 추후 업데이트 가능)',
     businessHours: '평일 09:00 ~ 18:00 (주말·공휴일 휴무)'

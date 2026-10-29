@@ -1,5 +1,6 @@
 <script setup>
 import { companyInfo } from '../../data/companyInfo.js'
+import SafeEmailCanvas from '../common/SafeEmailCanvas.vue'
 </script>
 
 <template>
@@ -18,7 +19,11 @@ import { companyInfo } from '../../data/companyInfo.js'
 
       <div class="footer-info">
         <p><strong>{{ companyInfo.nameKo }} ({{ companyInfo.nameEn }})</strong></p>
-        <p>이메일: {{ companyInfo.contact.email }} · 상담시간: {{ companyInfo.contact.businessHours }}</p>
+        <p class="footer-contact-line">
+          <span>이메일:</span>
+          <SafeEmailCanvas color="#475569" :font-size="13.5" :font-weight="600" :show-copy-button="false" />
+          <span>· 상담시간: {{ companyInfo.contact.businessHours }}</span>
+        </p>
         <p class="copyright">{{ companyInfo.copyright }}</p>
       </div>
     </div>
@@ -62,6 +67,14 @@ import { companyInfo } from '../../data/companyInfo.js'
   gap: 4px;
 }
 
+.footer-contact-line {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
 .copyright {
   color: var(--color-text-muted);
   margin-top: 4px;
@@ -74,6 +87,9 @@ import { companyInfo } from '../../data/companyInfo.js'
   }
   .footer-info {
     text-align: left;
+  }
+  .footer-contact-line {
+    justify-content: flex-start;
   }
 }
 </style>

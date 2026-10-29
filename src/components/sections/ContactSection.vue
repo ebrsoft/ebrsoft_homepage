@@ -3,6 +3,7 @@ import { reactive, ref } from 'vue'
 import { inquiryCategories } from '../../data/businessContent.js'
 import { companyInfo } from '../../data/companyInfo.js'
 import { validateInquiryForm } from '../../utils/validation.js'
+import SafeEmailCanvas from '../common/SafeEmailCanvas.vue'
 
 const form = reactive({
   category: inquiryCategories[0],
@@ -78,7 +79,9 @@ function closeDialog() {
         <div class="direct-contact-card">
           <div class="direct-item">
             <span class="direct-label">이메일 문의</span>
-            <a :href="`mailto:${companyInfo.contact.email}`" class="direct-value">{{ companyInfo.contact.email }}</a>
+            <div class="direct-value">
+              <SafeEmailCanvas color="#2b4490" :font-size="16" :font-weight="800" />
+            </div>
           </div>
           <div class="direct-item">
             <span class="direct-label">상담 시간</span>
@@ -185,7 +188,7 @@ function closeDialog() {
         <p>
           현재 자동 메일 발송 기능을 준비하고 있습니다.<br />
           빠른 상담 및 제휴 문의는 아래 대표 이메일로 연락해 주시면 신속히 안내해 드리겠습니다.<br /><br />
-          <a :href="`mailto:${companyInfo.contact.email}`" class="direct-value">{{ companyInfo.contact.email }}</a>
+          <SafeEmailCanvas color="#2b4490" :font-size="16" :font-weight="800" />
         </p>
         <button type="button" class="dialog-close-btn" @click="closeDialog">확인</button>
       </div>
